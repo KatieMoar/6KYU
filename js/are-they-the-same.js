@@ -38,18 +38,19 @@
 
 function comp(arraya, arrayb){
     //loop through arraya and pow all the numbers mapping it to a new array
+    if(arraya == null || arrayb == null) return false;
     let result = arraya.map(x => Math.pow(x,2))
     for (let i = 0; i < arrayb.length; i++){
         //THIS LETS YOU CHECK IF ONE ARRAY CONTAINS ANOTHER REMEMBER THIS!!!!
         const found = result.some(r=> arrayb.indexOf(r) >= 0)
-        return found
+        console.log(found)
     }
   }
 
 //PREP
 //We are taking in two arrays.
 //We want to return true or false depending on if array A contains the square of an item in array B regardless of order
-comp([121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 361, 25921, 361, 20736, 361]) // true
+comp([6, 6, 7, 8, 5, 1, 6, 9, 0, 8, 9, 3], [1, 36, 81, 36, 25, 64, 0, 49, 10, 81, 64, 36]) // false
 
 
 /* ------------------- NOTES ------------------ */
