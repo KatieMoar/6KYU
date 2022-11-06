@@ -43,7 +43,7 @@ function decrypt(encryptedText, n) {
     for(let i = 0; i < n; i++){
         for(let i = 0; i < encryptedText.length; i++){
             if(i % 2 === 0){
-                
+
             } else {
 
             }
@@ -63,3 +63,6 @@ function decrypt(encryptedText, n) {
     decrypt("hsi  etTi sats!", 1)  // "This is a test!");
     // decrypt("s eT ashi tist!", 2)  // "This is a test!");
     // decrypt(" Tah itse sits!", 3)  // "This is a test!");
+
+
+    //Couldn't get it , even the answer doesn't make sense so thats fun.
